@@ -23,9 +23,6 @@ connectDB()
 
 
 
-
-//may this time it will work 
-
 /*
 import express from "express";
 import mongoose from "mongoose";
