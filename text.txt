@@ -1,0 +1,53 @@
+***** day one *****
+after normal set up and git was initiated...
+
+1- ".gitkeep" - git does not store or track folder which does not have any data in it (emply folders) because origin is itself a folder 
+so we make ".gitkeep" file in that folder to keep that folder tracked
+2- ".gitignore" - have those file which must not be tracked, to lower the burgen on git 
+files like env for security purpose 
+files like node package because can be installed easity no need to track those
+3- can use touch command in mac to create folders
+4- module import style will be followed 
+5- nodemon to restart the server once the change is noticed
+6- structured the folders under src
+7- prettier extention
+
+
+***** day two *****
+mongodb altas set up...
+
+1- ip access - never allow from everywhere
+2- database access - owner and other roles 
+
+connecting database to the project, before this had env variable and constants
+1- installed dotenv express and mongoose 
+2- discuss about two approach to read data or access data 
+first to have all data in index.js file itself
+second and better is to have separate db folder and importing this folder into the index.js file 
+3- two approach to connect db in index file 
+one making index seperate file for db and then importing that in main project index file 
+another through await and iffe in main index file 
+4- exit code, error try and catch, async await (diff continent)... good practices
+5- dot env to load all the env is the beginning, we will intially have this in nodemon only but there it is experimental
+6- error must have unique msg, easy to differentiate 
+7- variable name must be copy-pasted 
+8- db had index file which had a function for connecting database, this funciton is called in main index
+
+problem faced -
+variable name not matching 
+app.js had the express import 
+
+
+***** day three *****
+request and responce api discussed 
+error handeling 
+
+1- app.use setup/configuration for express, cookie parser and cors
+2- creating middlewares - it is used when has to verify or check while passing or storing data
+3- made util file for error and async and api response
+4- error handeling overriding and making systematic response for errors 
+
+util contains those file of those function which will be called at many place, so we
+are defining the blue print or class while calling that function, that this function must contain this format - called streamline
+
+up to now these thing are necessary in every production project
